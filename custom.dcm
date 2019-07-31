@@ -1,0 +1,21 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP 8P8C_LED_Shielded
+D RJ connector, 8P8C (8 positions 8 connected), two LEDs, RJ45, Shielded
+K 8P8C RJ female connector led
+F ~
+$ENDCMP
+#
+$CMP RJ45_LED_Shielded
+D RJ connector, 8P8C (8 positions 8 connected), two LEDs, Shielded
+K 8P8C RJ female connector led
+F ~
+$ENDCMP
+#
+$CMP SR8201F
+D 10/100 Ethernet PHY
+K 100BASE-TX
+F https://datasheet.lcsc.com/szlcsc/1903141430_CoreChips-SR8201F_C378491.pdf
+$ENDCMP
+#
+#End Doc Library

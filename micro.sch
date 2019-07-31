@@ -1,0 +1,150 @@
+EESchema Schematic File Version 4
+LIBS:100base-t1-converter-cache
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 4
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L custom:blue_pill U3
+U 1 1 5D0A92FB
+P 6000 3750
+F 0 "U3" H 6000 4965 50  0000 C CNN
+F 1 "blue_pill" H 6000 4874 50  0000 C CNN
+F 2 "Package_DIP:DIP-40_W15.24mm" H 6000 3750 50  0001 C CNN
+F 3 "" H 6000 3750 50  0001 C CNN
+	1    6000 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6500 2900 6500 2800
+Wire Wire Line
+	6500 2800 6750 2800
+Connection ~ 6500 2800
+$Comp
+L power:GND #PWR0116
+U 1 1 5D0AACD0
+P 6750 2800
+F 0 "#PWR0116" H 6750 2550 50  0001 C CNN
+F 1 "GND" H 6755 2627 50  0000 C CNN
+F 2 "" H 6750 2800 50  0001 C CNN
+F 3 "" H 6750 2800 50  0001 C CNN
+	1    6750 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0117
+U 1 1 5D0AADB5
+P 5300 4850
+F 0 "#PWR0117" H 5300 4600 50  0001 C CNN
+F 1 "GND" H 5305 4677 50  0000 C CNN
+F 2 "" H 5300 4850 50  0001 C CNN
+F 3 "" H 5300 4850 50  0001 C CNN
+	1    5300 4850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5300 4850 5300 4600
+Wire Wire Line
+	5300 4600 5500 4600
+Wire Wire Line
+	5500 4100 4500 4100
+Wire Wire Line
+	5500 4200 4500 4200
+Text HLabel 4500 4100 0    50   BiDi ~ 0
+MDIO
+Text HLabel 4500 4200 0    50   Output ~ 0
+MDC
+$Comp
+L Connector_Generic:Conn_01x02 J4
+U 1 1 5D0ACA36
+P 4800 4700
+F 0 "J4" V 4672 4780 50  0000 L CNN
+F 1 "Conn_01x02" V 4763 4780 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 4800 4700 50  0001 C CNN
+F 3 "~" H 4800 4700 50  0001 C CNN
+	1    4800 4700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4800 4500 5000 4500
+Wire Wire Line
+	4700 4500 4250 4500
+$Comp
+L power:+5V #PWR0118
+U 1 1 5D0ADEBB
+P 4250 4500
+F 0 "#PWR0118" H 4250 4350 50  0001 C CNN
+F 1 "+5V" H 4265 4673 50  0000 C CNN
+F 2 "" H 4250 4500 50  0001 C CNN
+F 3 "" H 4250 4500 50  0001 C CNN
+	1    4250 4500
+	1    0    0    -1  
+$EndComp
+Text HLabel 4500 4000 0    50   BiDi ~ 0
+WAKE_IN_OUT
+Wire Wire Line
+	4500 4000 5500 4000
+Text HLabel 4500 3900 0    50   Input ~ 0
+~INT
+Wire Wire Line
+	4500 3900 5500 3900
+Text HLabel 4500 3800 0    50   Input ~ 0
+INH
+Wire Wire Line
+	4500 3800 5500 3800
+NoConn ~ 5500 2800
+NoConn ~ 5500 2900
+NoConn ~ 5500 3000
+NoConn ~ 5500 3100
+NoConn ~ 5500 3200
+NoConn ~ 5500 3300
+NoConn ~ 5500 3400
+NoConn ~ 5500 3500
+NoConn ~ 5500 3600
+NoConn ~ 5500 3700
+NoConn ~ 5500 4300
+NoConn ~ 5500 4400
+NoConn ~ 5500 4700
+NoConn ~ 6500 4700
+NoConn ~ 6500 4600
+NoConn ~ 6500 4500
+NoConn ~ 6500 4400
+NoConn ~ 6500 4300
+NoConn ~ 6500 4200
+NoConn ~ 6500 4100
+NoConn ~ 6500 4000
+NoConn ~ 6500 3900
+NoConn ~ 6500 3800
+NoConn ~ 6500 3700
+NoConn ~ 6500 3600
+NoConn ~ 6500 3500
+NoConn ~ 6500 3400
+NoConn ~ 6500 3300
+NoConn ~ 6500 3200
+NoConn ~ 6500 3100
+NoConn ~ 6500 3000
+$Comp
+L power:PWR_FLAG #FLG0106
+U 1 1 5D319899
+P 5000 4500
+F 0 "#FLG0106" H 5000 4575 50  0001 C CNN
+F 1 "PWR_FLAG" H 5000 4673 50  0000 C CNN
+F 2 "" H 5000 4500 50  0001 C CNN
+F 3 "~" H 5000 4500 50  0001 C CNN
+	1    5000 4500
+	1    0    0    -1  
+$EndComp
+Connection ~ 5000 4500
+Wire Wire Line
+	5000 4500 5500 4500
+$EndSCHEMATC
